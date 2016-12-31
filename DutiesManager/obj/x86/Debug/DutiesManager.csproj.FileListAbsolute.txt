@@ -190,3 +190,8 @@ C:\Users\luisdeolpy\Documents\Visual Studio 2015\Projects\DutiesManager\DutiesMa
 C:\Users\luisdeolpy\Documents\Visual Studio 2015\Projects\DutiesManager\DutiesManager\obj\x86\Debug\qualifiers.txt.intermediate
 C:\Users\luisdeolpy\Documents\Visual Studio 2015\Projects\DutiesManager\DutiesManager\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\luisdeolpy\Documents\Visual Studio 2015\Projects\DutiesManager\DutiesManager\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\luisdeolpy\Documents\Visual Studio 2015\Projects\DutiesManager\DutiesManager\bin\x86\Debug\Views\Main.xbf
+C:\Users\luisdeolpy\Documents\Visual Studio 2015\Projects\DutiesManager\DutiesManager\obj\x86\Debug\Views\Main.g.i.cs
+C:\Users\luisdeolpy\Documents\Visual Studio 2015\Projects\DutiesManager\DutiesManager\obj\x86\Debug\Views\Main.g.cs
+C:\Users\luisdeolpy\Documents\Visual Studio 2015\Projects\DutiesManager\DutiesManager\obj\x86\Debug\Views\Main.xaml
+C:\Users\luisdeolpy\Documents\Visual Studio 2015\Projects\DutiesManager\DutiesManager\obj\x86\Debug\Views\Main.xbf

@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using DutiesManager_RESTfulAPI.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace DutiesManager_RESTfulAPI
 {
@@ -28,6 +30,8 @@ namespace DutiesManager_RESTfulAPI
         public void ConfigureServices(IServiceCollection services)
         {
             // Add framework services.
+            var connection = @"Server=(localdb)\MSSQLLOCALDB; Database=DutiesManager; Trusted_Connection=True;";
+            services.AddDbContext<DutiesManagerDbContext>(options => options.UseSqlServer(connection));
             services.AddMvc();
         }
 
@@ -36,7 +40,6 @@ namespace DutiesManager_RESTfulAPI
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
-
             app.UseMvc();
         }
     }

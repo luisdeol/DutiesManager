@@ -1,0 +1,49 @@
+﻿<Page
+    x:Class="DutiesManager.Views.Main"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DutiesManager.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <SplitView Name="sv" DisplayMode="CompactOverlay" CompactPaneLength="50" OpenPaneLength="200">
+            <SplitView.Pane>
+                <StackPanel Background="LightGray">
+                    <Button Name="b_Hamburger" FontFamily="Segoe MDL2 Assets" Content="&#xE700;"></Button>
+                    <ListView>
+                        <ListViewItem Content="&#xE80F;" FontFamily="Segoe MDL2 Assets"></ListViewItem>
+                        <ListViewItem Content="&#xE713;" FontFamily="Segoe MDL2 Assets" ></ListViewItem>
+                    </ListView>
+                </StackPanel>    
+            </SplitView.Pane>
+            <SplitView.Content>
+                <StackPanel Name="sv_Content" Margin="10 0 0 0">
+                    <TextBlock Name="title" Text="Main page" HorizontalAlignment="Center" Margin="0 30 0 0"></TextBlock>
+                    <TextBlock Name="filter_title" Text="Filter"></TextBlock>
+                    <ComboBox>
+                        <ComboBoxItem Content="1 week" IsSelected="True"></ComboBoxItem>
+                    </ComboBox>
+                    <TextBlock Name="tb_title" Text="Duties"></TextBlock>
+                    <ScrollViewer VerticalScrollBarVisibility="Visible">
+                        <ListBox Name="lb_duties" HorizontalAlignment="Stretch">
+                            <ListBoxItem Content="Fazer pn"></ListBoxItem>
+                            <ListBoxItem Content="Vegetar"></ListBoxItem>
+                            <ListBoxItem Content="Watch Bunny Foo Foo's livestream"></ListBoxItem>
+                            <ListBoxItem Content="Read Danilo Rocha's bestseller"></ListBoxItem>
+                        </ListBox>    
+                    </ScrollViewer>
+                </StackPanel>    
+            </SplitView.Content>
+        </SplitView>
+    </Grid>
+    <Page.BottomAppBar>
+        <CommandBar>
+            <CommandBar.Content>
+                <Grid/>
+            </CommandBar.Content>
+            <AppBarButton Icon="Add" Label="Confirm" ClickMode="Press"/>
+        </CommandBar>
+    </Page.BottomAppBar>
+</Page>
