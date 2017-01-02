@@ -16,6 +16,30 @@ namespace DutiesManager_RESTfulAPI.Migrations
                 .HasAnnotation("ProductVersion", "1.1.0-rtm-22752")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("DutiesManager_RESTfulAPI.Models.Duty", b =>
+                {
+                    b.Property<int>("DutyId")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<DateTime>("CreatedAt");
+
+                    b.Property<string>("Description");
+
+                    b.Property<DateTime>("DueTime");
+
+                    b.Property<string>("DutyTitle")
+                        .IsRequired()
+                        .HasMaxLength(50);
+
+                    b.Property<int>("UserId");
+
+                    b.HasKey("DutyId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Duties");
+                });
+
             modelBuilder.Entity("DutiesManager_RESTfulAPI.Models.User", b =>
                 {
                     b.Property<int>("UserId")
@@ -33,6 +57,14 @@ namespace DutiesManager_RESTfulAPI.Migrations
                     b.HasKey("UserId");
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("DutiesManager_RESTfulAPI.Models.Duty", b =>
+                {
+                    b.HasOne("DutiesManager_RESTfulAPI.Models.User", "user")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
         }
     }

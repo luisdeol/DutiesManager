@@ -10,5 +10,6 @@ namespace DutiesManager_RESTfulAPI.Models
     {
         public DutiesManagerDbContext(DbContextOptions<DutiesManagerDbContext> options) : base(options) { }
         public DbSet<User> Users { get; set; }
+        public DbSet<Duty> Duties { get; set; }
     }
 }

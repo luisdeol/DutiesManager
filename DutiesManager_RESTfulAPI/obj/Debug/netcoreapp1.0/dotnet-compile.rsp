@@ -181,9 +181,14 @@
 --resource:"C:\Users\luisdeolpy\Documents\Visual Studio 2015\Projects\DutiesManager\DutiesManager_RESTfulAPI\obj\Debug\netcoreapp1.0\DutiesManager_RESTfulAPIdotnet-compile.deps.json",DutiesManager_RESTfulAPI.deps.json
 C:\Users\luisdeolpy\Documents\Visual Studio 2015\Projects\DutiesManager\DutiesManager_RESTfulAPI\Program.cs
 C:\Users\luisdeolpy\Documents\Visual Studio 2015\Projects\DutiesManager\DutiesManager_RESTfulAPI\Startup.cs
+C:\Users\luisdeolpy\Documents\Visual Studio 2015\Projects\DutiesManager\DutiesManager_RESTfulAPI\Controllers\DutiesController.cs
+C:\Users\luisdeolpy\Documents\Visual Studio 2015\Projects\DutiesManager\DutiesManager_RESTfulAPI\Controllers\UsersController.cs
 C:\Users\luisdeolpy\Documents\Visual Studio 2015\Projects\DutiesManager\DutiesManager_RESTfulAPI\Controllers\ValuesController.cs
 C:\Users\luisdeolpy\Documents\Visual Studio 2015\Projects\DutiesManager\DutiesManager_RESTfulAPI\Migrations\20161231145340_First Migration User.cs
 C:\Users\luisdeolpy\Documents\Visual Studio 2015\Projects\DutiesManager\DutiesManager_RESTfulAPI\Migrations\20161231145340_First Migration User.Designer.cs
+C:\Users\luisdeolpy\Documents\Visual Studio 2015\Projects\DutiesManager\DutiesManager_RESTfulAPI\Migrations\20170102220854_Duty.cs
+C:\Users\luisdeolpy\Documents\Visual Studio 2015\Projects\DutiesManager\DutiesManager_RESTfulAPI\Migrations\20170102220854_Duty.Designer.cs
 C:\Users\luisdeolpy\Documents\Visual Studio 2015\Projects\DutiesManager\DutiesManager_RESTfulAPI\Migrations\DutiesManagerDbContextModelSnapshot.cs
 C:\Users\luisdeolpy\Documents\Visual Studio 2015\Projects\DutiesManager\DutiesManager_RESTfulAPI\Models\DutiesManagerDbContext.cs
+C:\Users\luisdeolpy\Documents\Visual Studio 2015\Projects\DutiesManager\DutiesManager_RESTfulAPI\Models\Duty.cs
 C:\Users\luisdeolpy\Documents\Visual Studio 2015\Projects\DutiesManager\DutiesManager_RESTfulAPI\Models\User.cs
