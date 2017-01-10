@@ -36,6 +36,8 @@ namespace DutiesManager_RESTfulAPI.Controllers
         [HttpPost]
         public void Post([FromBody]Duty duty)
         {
+            _context.Duties.Add(duty);
+            _context.SaveChanges();
         }
 
         // PUT api/values/5

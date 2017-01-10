@@ -30,7 +30,7 @@ namespace DutiesManager_RESTfulAPI
         public void ConfigureServices(IServiceCollection services)
         {
             // Add framework services.
-            var connection = @"Server=(localdb)\MSSQLLOCALDB; Database=DutiesManager; Trusted_Connection=True;";
+            var connection = @"Server=LUISDEOL\SQLEXPRESS; Database=DutiesManager; Trusted_Connection=True;";
             services.AddDbContext<DutiesManagerDbContext>(options => options.UseSqlServer(connection));
             services.AddMvc();
         }

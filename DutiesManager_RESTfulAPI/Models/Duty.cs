@@ -12,14 +12,18 @@ namespace DutiesManager_RESTfulAPI.Models
         [Required, StringLength(50, ErrorMessage = "Your title should have up to 50 characters. ")]
         public string DutyTitle{ get; set; }
         public string Description { get; set; }
-        [DataType(DataType.DateTime)]
+
         [Required]
-        public DateTime DueTime { get; set; }
+        public DateTime DueDate { get; set; }
+
+        [Required]
+        public string DueTime { get; set; }
+
         [DataType(DataType.DateTime)]
         [Required]
         public DateTime CreatedAt { get; set; }
 
         public int UserId { get; set; }
-        public User user { get; set; }
+        public User User { get; set; }
     }
 }

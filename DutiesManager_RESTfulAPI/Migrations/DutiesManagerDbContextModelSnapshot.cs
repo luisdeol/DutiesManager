@@ -25,7 +25,10 @@ namespace DutiesManager_RESTfulAPI.Migrations
 
                     b.Property<string>("Description");
 
-                    b.Property<DateTime>("DueTime");
+                    b.Property<DateTime>("DueDate");
+
+                    b.Property<string>("DueTime")
+                        .IsRequired();
 
                     b.Property<string>("DutyTitle")
                         .IsRequired()
@@ -61,7 +64,7 @@ namespace DutiesManager_RESTfulAPI.Migrations
 
             modelBuilder.Entity("DutiesManager_RESTfulAPI.Models.Duty", b =>
                 {
-                    b.HasOne("DutiesManager_RESTfulAPI.Models.User", "user")
+                    b.HasOne("DutiesManager_RESTfulAPI.Models.User", "User")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);

@@ -16,7 +16,7 @@
     <PackageRegistrationPath>
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
-    <RegisteredManifestChecksum>3270125C501D170F37CE8BAECBB9CFA3C29B86B31C7E67583E9DE33D018B07F5</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>19301E4B37F7495F8D52B8A6A78218D36068AA33CD4A3AFB710786B1E447F6E7</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>3348abc8-0ebe-47fb-a854-ba6813497e62_1.0.0.0_x64__q23e8xeht80f2</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>3348abc8-0ebe-47fb-a854-ba6813497e62_q23e8xeht80f2!App</RegisteredUserModeAppID>
     <RegisteredPackageID>3348abc8-0ebe-47fb-a854-ba6813497e62</RegisteredPackageID>
@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\luisdeolpy\Documents\Visual Studio 2015\Projects\DutiesManager\DutiesManager\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-01-02T22:50:04.316</Modified>
+      <Modified>2017-01-10T19:10:07.942</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\luisdeolpy\Documents\Visual Studio 2015\Projects\DutiesManager\DutiesManager\bin\x64\Debug\DutiesManager.exe">
       <PackagePath>entrypoint\DutiesManager.exe</PackagePath>
-      <Modified>2017-01-02T22:50:00.575</Modified>
+      <Modified>2017-01-10T19:10:07.507</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\luisdeolpy\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -95,6 +95,10 @@
     <AppxPackagedFile Include="C:\Users\luisdeolpy\.nuget\packages\Microsoft.Win32.Primitives\4.0.0\lib\dotnet\Microsoft.Win32.Primitives.dll">
       <PackagePath>Microsoft.Win32.Primitives.dll</PackagePath>
       <Modified>2016-01-23T00:00:15.094</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\luisdeolpy\.nuget\packages\Newtonsoft.Json\9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+      <Modified>2016-06-14T02:06:14.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\luisdeolpy\.nuget\packages\runtime.any.System.Private.DataContractSerialization\4.1.0\lib\netcore50\System.Private.DataContractSerialization.dll">
       <PackagePath>System.Private.DataContractSerialization.dll</PackagePath>
@@ -488,19 +492,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\luisdeolpy\Documents\Visual Studio 2015\Projects\DutiesManager\DutiesManager\bin\x64\Debug\DutiesManager.xr.xml">
       <PackagePath>DutiesManager.xr.xml</PackagePath>
-      <Modified>2017-01-02T22:50:00.205</Modified>
+      <Modified>2017-01-10T18:52:35.102</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
-      <Modified>2016-07-17T20:56:33.338</Modified>
+      <Modified>2017-01-10T16:54:12.407</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\luisdeolpy\Documents\Visual Studio 2015\Projects\DutiesManager\DutiesManager\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2017-01-02T22:50:03.176</Modified>
+      <Modified>2017-01-10T18:59:24.878</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\luisdeolpy\Documents\Visual Studio 2015\Projects\DutiesManager\DutiesManager\bin\x64\Debug\Core\DutiesManager.exe">
       <PackagePath>DutiesManager.exe</PackagePath>
-      <Modified>2017-01-02T22:50:04.291</Modified>
+      <Modified>2017-01-10T19:10:07.937</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

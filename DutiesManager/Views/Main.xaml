@@ -8,10 +8,10 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <SplitView Name="sv" DisplayMode="CompactOverlay" CompactPaneLength="50" OpenPaneLength="200">
+        <SplitView Name="Sv" DisplayMode="CompactOverlay" CompactPaneLength="50" OpenPaneLength="200">
             <SplitView.Pane>
                 <StackPanel Background="LightGray">
-                    <Button Name="b_Hamburger" FontFamily="Segoe MDL2 Assets" Content="&#xE700;"></Button>
+                    <Button Name="BHamburger" FontFamily="Segoe MDL2 Assets" Content="&#xE700;" Click="BHamburger_OnClick"></Button>
                     <ListView>
                         <ListViewItem Content="&#xE80F;" FontFamily="Segoe MDL2 Assets"></ListViewItem>
                         <ListViewItem Content="&#xE713;" FontFamily="Segoe MDL2 Assets" ></ListViewItem>
@@ -19,19 +19,15 @@
                 </StackPanel>    
             </SplitView.Pane>
             <SplitView.Content>
-                <StackPanel Name="sv_Content" Margin="10 0 0 0">
-                    <TextBlock Name="title" Text="Main page" HorizontalAlignment="Center" Margin="0 30 0 0"></TextBlock>
-                    <TextBlock Name="filter_title" Text="Filter"></TextBlock>
+                <StackPanel Name="SvContent" Margin="10 0 0 0" Loaded="SvContent_OnLoaded">
+                    <TextBlock Name="Title" Text="Main page" HorizontalAlignment="Center" Margin="0 30 0 0"></TextBlock>
+                    <TextBlock Name="FilterTitle" Text="Filter"></TextBlock>
                     <ComboBox>
                         <ComboBoxItem Content="1 week" IsSelected="True"></ComboBoxItem>
                     </ComboBox>
-                    <TextBlock Name="tb_title" Text="Duties"></TextBlock>
+                    <TextBlock Name="TbTitle" Text="Duties"></TextBlock>
                     <ScrollViewer VerticalScrollBarVisibility="Visible">
-                        <ListBox Name="lb_duties" HorizontalAlignment="Stretch">
-                            <ListBoxItem Content="Fazer pn"></ListBoxItem>
-                            <ListBoxItem Content="Vegetar"></ListBoxItem>
-                            <ListBoxItem Content="Watch Bunny Foo Foo's livestream"></ListBoxItem>
-                            <ListBoxItem Content="Read Danilo Rocha's bestseller"></ListBoxItem>
+                        <ListBox Name="LbDuties" HorizontalAlignment="Stretch">
                         </ListBox>    
                     </ScrollViewer>
                 </StackPanel>    
@@ -43,7 +39,7 @@
             <CommandBar.Content>
                 <Grid/>
             </CommandBar.Content>
-            <AppBarButton Icon="Add" Label="Confirm" ClickMode="Press"/>
+            <AppBarButton Icon="Add" Label="Confirm" ClickMode="Press" Click="Add_OnClick"/>
         </CommandBar>
     </Page.BottomAppBar>
 </Page>

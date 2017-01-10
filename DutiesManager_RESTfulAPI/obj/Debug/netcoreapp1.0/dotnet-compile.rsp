@@ -188,6 +188,8 @@ C:\Users\luisdeolpy\Documents\Visual Studio 2015\Projects\DutiesManager\DutiesMa
 C:\Users\luisdeolpy\Documents\Visual Studio 2015\Projects\DutiesManager\DutiesManager_RESTfulAPI\Migrations\20161231145340_First Migration User.Designer.cs
 C:\Users\luisdeolpy\Documents\Visual Studio 2015\Projects\DutiesManager\DutiesManager_RESTfulAPI\Migrations\20170102220854_Duty.cs
 C:\Users\luisdeolpy\Documents\Visual Studio 2015\Projects\DutiesManager\DutiesManager_RESTfulAPI\Migrations\20170102220854_Duty.Designer.cs
+C:\Users\luisdeolpy\Documents\Visual Studio 2015\Projects\DutiesManager\DutiesManager_RESTfulAPI\Migrations\20170110190016_AddDueDateAndChangeDueTimeToString.cs
+C:\Users\luisdeolpy\Documents\Visual Studio 2015\Projects\DutiesManager\DutiesManager_RESTfulAPI\Migrations\20170110190016_AddDueDateAndChangeDueTimeToString.Designer.cs
 C:\Users\luisdeolpy\Documents\Visual Studio 2015\Projects\DutiesManager\DutiesManager_RESTfulAPI\Migrations\DutiesManagerDbContextModelSnapshot.cs
 C:\Users\luisdeolpy\Documents\Visual Studio 2015\Projects\DutiesManager\DutiesManager_RESTfulAPI\Models\DutiesManagerDbContext.cs
 C:\Users\luisdeolpy\Documents\Visual Studio 2015\Projects\DutiesManager\DutiesManager_RESTfulAPI\Models\Duty.cs

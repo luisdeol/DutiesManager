@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DutiesManager.Models
 {
@@ -11,7 +7,8 @@ namespace DutiesManager.Models
         public int DutyId { get; set; }
         public string DutyTitle { get; set; }
         public string Description { get; set; }
-        public DateTime DueTime { get; set; }
+        public string DueTime { get; set; }
+        public DateTime DueDate { get; set; }
         public DateTime CreatedAt { get; set; }
         public int UserId { get; set; }
     }

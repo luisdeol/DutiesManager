@@ -1,20 +1,11 @@
-﻿using System;
+﻿using DutiesManager.Models;
+using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
 using System.Net.Http;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
-using DutiesManager.Models;
-using System.Runtime.Serialization.Json;
+
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace DutiesManager.Views
@@ -27,6 +18,30 @@ namespace DutiesManager.Views
         public Main()
         {
             this.InitializeComponent();
+        }
+
+        private async void SvContent_OnLoaded(object sender, RoutedEventArgs e)
+        {
+            HttpClient client = new HttpClient();
+            string url = "http://localhost:51994/api/duties";
+            Uri uri = new Uri(url);
+            var response = await client.GetStringAsync(uri);
+            List<Duty> duties = JsonConvert.DeserializeObject<List<Duty>>(response);
+            foreach (Duty duty in duties)
+            {
+                ListBoxItem item = new ListBoxItem {Content = duty.DutyTitle};
+                LbDuties.Items?.Add(item);
+            }
+        }
+
+        private void BHamburger_OnClick(object sender, RoutedEventArgs e)
+        {
+            Sv.IsPaneOpen = !Sv.IsPaneOpen;
+        }
+
+        private void Add_OnClick(object sender, RoutedEventArgs e)
+        {
+            Frame?.Navigate(typeof(CreateDuty));
         }
     }
 }
