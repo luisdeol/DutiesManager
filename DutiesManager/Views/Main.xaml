@@ -27,7 +27,7 @@
                     </ComboBox>
                     <TextBlock Name="TbTitle" Text="Duties"></TextBlock>
                     <ScrollViewer VerticalScrollBarVisibility="Visible">
-                        <ListBox Name="LbDuties" HorizontalAlignment="Stretch">
+                        <ListBox Name="LbDuties" HorizontalAlignment="Stretch" SelectionChanged="LbDuties_SelectionChanged">
                         </ListBox>    
                     </ScrollViewer>
                 </StackPanel>    
@@ -39,7 +39,7 @@
             <CommandBar.Content>
                 <Grid/>
             </CommandBar.Content>
-            <AppBarButton Icon="Add" Label="Confirm" ClickMode="Press" Click="Add_OnClick"/>
+            <AppBarButton Icon="Add" Label="Create" ClickMode="Press" Click="Add_OnClick"/>
         </CommandBar>
     </Page.BottomAppBar>
 </Page>

@@ -27,7 +27,7 @@
                     </ComboBox>
                     <TextBlock x:ConnectionId='6' Name="TbTitle" Text="Duties"></TextBlock>
                     <ScrollViewer VerticalScrollBarVisibility="Visible">
-                        <ListBox x:ConnectionId='7' Name="LbDuties" HorizontalAlignment="Stretch">
+                        <ListBox x:ConnectionId='7' Name="LbDuties" HorizontalAlignment="Stretch"                                             >
                         </ListBox>    
                     </ScrollViewer>
                 </StackPanel>    
@@ -39,7 +39,7 @@
             <CommandBar.Content>
                 <Grid/>
             </CommandBar.Content>
-            <AppBarButton x:ConnectionId='8' Icon="Add" Label="Confirm" ClickMode="Press"                    />
+            <AppBarButton x:ConnectionId='8' Icon="Add" Label="Create" ClickMode="Press"                    />
         </CommandBar>
     </Page.BottomAppBar>
 </Page>

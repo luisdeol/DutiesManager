@@ -48,13 +48,49 @@ namespace DutiesManager.Views
                 var response = await client.PostAsync(uri.ToString(), content);
                 MessageDialog confirmationDialog = new MessageDialog("Duty created!");
                 await confirmationDialog.ShowAsync();
-                Frame?.Navigate(typeof(Main));
+                Frame?.Navigate(typeof(Details), duty);
             }
         }
 
         private void BHamburger_OnClick(object sender, RoutedEventArgs e)
         {
             Sv.IsPaneOpen = !Sv.IsPaneOpen;
+        }
+
+        private async void Cancel_OnClick(object sender, RoutedEventArgs e)
+        {
+            const string title = "Create";
+            const string content = "Voce tem certeza que quer descartar as mudanças no formulário?";
+            var dialog = new MessageDialog(content, title);
+            var yesCommand = new UICommand("Ok") { Id = 0 };
+            var noCommand = new UICommand("Cancel") { Id=1 };
+            dialog.DefaultCommandIndex = 0;
+            dialog.CancelCommandIndex = 0;
+            dialog.Commands.Add(yesCommand);
+            dialog.Commands.Add(noCommand);
+            var result = await dialog.ShowAsync();
+            if (result == yesCommand)
+                Frame?.Navigate(typeof(Main));
+        }
+
+        private async void Selector_OnSelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var index = LbMenu.SelectedIndex;
+            var title = "Cancel";
+            var description = "Your pending changes are going to be lost. Are you sure yo want to leave this page?";
+            var cancelDialog = new MessageDialog(description, title);
+            var yesCommand = new UICommand("Yes");
+            var noCommand = new UICommand("No");
+            cancelDialog.DefaultCommandIndex = 1;
+            cancelDialog.CancelCommandIndex = 0;
+            cancelDialog.Commands.Add(noCommand);
+            cancelDialog.Commands.Add(yesCommand);
+            var showDialog = await cancelDialog.ShowAsync();
+            if (showDialog == yesCommand)
+                if (index == 0)
+                    Frame?.Navigate(typeof(Main));
+                else
+                    Frame?.Navigate(typeof(Main));
         }
     }
 }

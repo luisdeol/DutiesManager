@@ -201,3 +201,8 @@ C:\Users\luisdeolpy\Documents\Visual Studio 2015\Projects\DutiesManager\DutiesMa
 C:\Users\luisdeolpy\Documents\Visual Studio 2015\Projects\DutiesManager\DutiesManager\obj\x64\Debug\Views\CreateDuty.xaml
 C:\Users\luisdeolpy\Documents\Visual Studio 2015\Projects\DutiesManager\DutiesManager\obj\x64\Debug\Views\CreateDuty.xbf
 C:\Users\luisdeolpy\Documents\Visual Studio 2015\Projects\DutiesManager\DutiesManager\bin\x64\Debug\Views\CreateDuty.xbf
+C:\Users\luisdeolpy\Documents\Visual Studio 2015\Projects\DutiesManager\DutiesManager\obj\x64\Debug\Views\Details.g.i.cs
+C:\Users\luisdeolpy\Documents\Visual Studio 2015\Projects\DutiesManager\DutiesManager\obj\x64\Debug\Views\Details.g.cs
+C:\Users\luisdeolpy\Documents\Visual Studio 2015\Projects\DutiesManager\DutiesManager\obj\x64\Debug\Views\Details.xaml
+C:\Users\luisdeolpy\Documents\Visual Studio 2015\Projects\DutiesManager\DutiesManager\obj\x64\Debug\Views\Details.xbf
+C:\Users\luisdeolpy\Documents\Visual Studio 2015\Projects\DutiesManager\DutiesManager\bin\x64\Debug\Views\Details.xbf

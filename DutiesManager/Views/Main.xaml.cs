@@ -29,7 +29,11 @@ namespace DutiesManager.Views
             List<Duty> duties = JsonConvert.DeserializeObject<List<Duty>>(response);
             foreach (Duty duty in duties)
             {
-                ListBoxItem item = new ListBoxItem {Content = duty.DutyTitle};
+                ListBoxItem item = new ListBoxItem
+                {
+                    Content = duty.DutyTitle,
+                    Tag = duty.DutyId
+                };
                 LbDuties.Items?.Add(item);
             }
         }
@@ -41,7 +45,19 @@ namespace DutiesManager.Views
 
         private void Add_OnClick(object sender, RoutedEventArgs e)
         {
-            Frame?.Navigate(typeof(CreateDuty));
+            Frame?.Navigate(typeof(CreateDuty), new { id = 4 });
+        }
+
+        private async void LbDuties_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var dutyId = ((ListBoxItem) LbDuties.SelectedItem).Tag.ToString();
+            HttpClient client = new HttpClient();
+            string url = "http://localhost:51994/api/duties/"+ dutyId;
+            Uri uri = new Uri(url);
+            var response = await client.GetStringAsync(uri);
+            Duty duty = JsonConvert.DeserializeObject<Duty>(response);
+
+            Frame?.Navigate(typeof(Details), duty);
         }
     }
 }

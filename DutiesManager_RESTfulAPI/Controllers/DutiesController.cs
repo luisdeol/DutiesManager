@@ -27,9 +27,10 @@ namespace DutiesManager_RESTfulAPI.Controllers
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public Duty Get(int id)
         {
-            return "value";
+            Duty duty = _context.Duties.Single(d => d.DutyId == id);
+            return duty;
         }
 
         // POST api/values

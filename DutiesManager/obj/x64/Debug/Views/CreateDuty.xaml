@@ -12,23 +12,23 @@
             <SplitView.Pane>
                 <StackPanel Background="LightGray">
                     <Button x:ConnectionId='2' Name="BHamburger" FontFamily="Segoe MDL2 Assets" Content="&#xE700;"                           ></Button>
-                    <ListView>
+                    <ListView x:ConnectionId='3' Name="LbMenu"                                                >
                         <ListViewItem Content="&#xE80F;" FontFamily="Segoe MDL2 Assets"></ListViewItem>
                         <ListViewItem Content="&#xE713;" FontFamily="Segoe MDL2 Assets" ></ListViewItem>
                     </ListView>
                 </StackPanel>
             </SplitView.Pane>
             <SplitView.Content>
-                <StackPanel x:ConnectionId='3' Name="SvContent" Margin="10 0 0 0" Padding="10 50 10 10">
+                <StackPanel x:ConnectionId='4' Name="SvContent" Margin="10 0 0 0" Padding="10 50 10 10">
                     <TextBlock FontFamily="Segoe UI" FontSize="20" Margin="0 0 0 10">Create</TextBlock>
                     <TextBlock>Title</TextBlock>
-                    <TextBox x:ConnectionId='4' Name="TitleTextBox"  PlaceholderText="Type a title for your duty." Margin="0 0 0 10"></TextBox>
+                    <TextBox x:ConnectionId='5' Name="TitleTextBox"  PlaceholderText="Type a title for your duty." Margin="0 0 0 10"></TextBox>
                     <TextBlock>Description</TextBlock>
-                    <TextBox x:ConnectionId='5' Name="DescriptionTextBox" PlaceholderText="Type a description for your duty." Margin="0 0 0 10"></TextBox>
+                    <TextBox x:ConnectionId='6' Name="DescriptionTextBox" PlaceholderText="Type a description for your duty." Margin="0 0 0 10"></TextBox>
                     <TextBlock> Due Date </TextBlock>
-                    <CalendarDatePicker x:ConnectionId='6' Name="CalendarDatePicker" Margin="0 0 0 10"></CalendarDatePicker>
+                    <CalendarDatePicker x:ConnectionId='7' Name="CalendarDatePicker" Margin="0 0 0 10"></CalendarDatePicker>
                     <TextBlock> Due Time </TextBlock>
-                    <TimePicker x:ConnectionId='7' Name="TimePicker"></TimePicker>
+                    <TimePicker x:ConnectionId='8' Name="TimePicker"></TimePicker>
                     
                 </StackPanel> 
             </SplitView.Content>
@@ -39,7 +39,8 @@
             <CommandBar.Content>
                 <Grid/>
             </CommandBar.Content>
-            <AppBarButton x:ConnectionId='8' Icon="Accept" Label="Confirm" ClickMode="Press"                           />
+            <AppBarButton x:ConnectionId='9' Icon="Accept" Label="Confirm" ClickMode="Press"                           />
+            <AppBarButton x:ConnectionId='10' Icon="Cancel" Label="Cancel" ClickMode="Press"                       />
         </CommandBar>
     </Page.BottomAppBar>
 </Page>
