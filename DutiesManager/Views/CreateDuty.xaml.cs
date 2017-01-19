@@ -52,11 +52,6 @@ namespace DutiesManager.Views
             }
         }
 
-        private void BHamburger_OnClick(object sender, RoutedEventArgs e)
-        {
-            Sv.IsPaneOpen = !Sv.IsPaneOpen;
-        }
-
         private async void Cancel_OnClick(object sender, RoutedEventArgs e)
         {
             const string title = "Create";

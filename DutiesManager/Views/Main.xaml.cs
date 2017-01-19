@@ -3,6 +3,7 @@ using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
+using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 
@@ -17,6 +18,7 @@ namespace DutiesManager.Views
     {
         public Main()
         {
+            SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
             this.InitializeComponent();
         }
 
@@ -36,11 +38,6 @@ namespace DutiesManager.Views
                 };
                 LbDuties.Items?.Add(item);
             }
-        }
-
-        private void BHamburger_OnClick(object sender, RoutedEventArgs e)
-        {
-            Sv.IsPaneOpen = !Sv.IsPaneOpen;
         }
 
         private void Add_OnClick(object sender, RoutedEventArgs e)

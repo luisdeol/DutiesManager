@@ -51,6 +51,9 @@ namespace DutiesManager_RESTfulAPI.Controllers
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+            var duty = _context.Duties.Single(d => d.DutyId == id);
+            _context.Duties.Remove(duty);
+            _context.SaveChanges();
         }
     }
 }
